@@ -1,0 +1,499 @@
+:root {
+  --primary: orange;
+  --dark-2: #eeeeee;
+  --surface: #ffffff;
+  --border: #cccccc;
+  --text-primary: navy;
+  --text-secondary: #555555;
+  --transition: all 0.3s ease;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.center {
+  text-align: center;
+}
+
+.section-header {
+  margin-bottom: 20px;
+}
+
+.section-tag {
+  display: inline-block;
+  background-color: var(--primary);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  color: var(--text-primary);
+  font-size: 32px;
+  margin: 0;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, navy, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* hero section */
+.hero-section {
+  background-color: navy;
+  background-image: linear-gradient(rgba(0, 0, 128, 0.4), rgba(0, 0, 128, 0.4)), url('assets/campus.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* buttons */
+.apply-btn {
+  background-color: orange;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.apply-btn:hover {
+  background-color: darkorange;
+}
+
+.explore-btn {
+  background-color: white;
+  color: navy;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.explore-btn:hover {
+  background-color: lightgray;
+}
+
+/* course boxes */
+.course-box {
+  border: 1px solid #cccccc;
+  padding: 15px;
+  margin: 10px;
+  background-color: #f9f9f9;
+}
+
+.course-box h3 {
+  color: navy;
+}
+
+.course-box ul {
+  padding-left: 20px;
+}
+
+.course-box ul li {
+  margin-bottom: 5px;
+  color: #555555;
+}
+
+/* recruiter tags */
+.recruiter-tag {
+  display: inline-block;
+  background-color: white;
+  border: 1px solid #999999;
+  padding: 8px 18px;
+  margin: 5px;
+  font-weight: bold;
+  color: navy;
+}
+
+/* testimonial boxes */
+.testi-box {
+  border: 1px solid #cccccc;
+  padding: 20px;
+  margin: 10px;
+  background-color: #f9f9f9;
+}
+
+.testi-box p {
+  color: #555555;
+  font-size: 14px;
+}
+
+.grid-layout {
+  display: grid;
+  gap: 20px;
+}
+
+.grid-2-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4-col {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-6-col {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.gap-30 {
+  gap: 30px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.text-left {
+  text-align: left;
+}
+
+/* hidden class */
+.hidden {
+  display: none;
+}
+
+.navbar {
+  background-color: navy;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
+}
+
+.nav-logo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo img {
+  height: 42px;
+  width: auto;
+  display: block;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: yellow;
+}
+
+.nav-apply {
+  background-color: orange;
+  color: navy;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.nav-apply:hover {
+  transform: scale(1.05);
+  background-color: #ff9800;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: 2px solid white;
+  border-radius: 4px;
+  color: white;
+  font-size: 24px;
+  padding: 4px 12px;
+  cursor: pointer;
+  margin-left: auto;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+
+
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+    padding-top: 15px;
+  }
+
+  .nav-link,
+  .nav-apply {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  /* --- Hero --- */
+  .hero-section {
+    padding: 50px 16px;
+  }
+
+  .hero-section h1 {
+    font-size: 28px !important;
+  }
+
+  .hero-section h2 {
+    font-size: 18px !important;
+  }
+
+  .hero-section p {
+    font-size: 14px !important;
+  }
+
+  .apply-btn,
+  .explore-btn {
+    padding: 12px 20px;
+    font-size: 15px;
+    display: block;
+    width: 90%;
+    margin: 6px auto;
+  }
+
+  .grid-layout.grid-2-col,
+  .grid-layout.grid-3-col,
+  .grid-layout.grid-4-col,
+  .grid-layout.grid-6-col {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .flex-center {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* --- About section image --- */
+  #about img {
+    width: 100% !important;
+    height: auto;
+  }
+
+  #about {
+    padding: 24px 16px !important;
+  }
+
+  #stats {
+    padding: 30px 16px !important;
+  }
+
+  #stats td {
+    width: 50% !important;
+    display: inline-block !important;
+    box-sizing: border-box;
+    padding: 10px 0 !important;
+  }
+
+  #stats h1 {
+    font-size: 34px !important;
+  }
+
+  /* --- Courses section --- */
+  #courses {
+    padding: 24px 16px !important;
+  }
+
+  .course-box {
+    margin: 8px 0 !important;
+  }
+
+  /* Course tab buttons */
+  #courses center button {
+    display: inline-block;
+    padding: 8px 14px !important;
+    font-size: 13px !important;
+    margin: 3px !important;
+  }
+
+  /* --- Recruiters --- */
+  .recruiter-tag {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+
+  /* --- Testimonials --- */
+  #testimonials {
+    padding: 24px 16px !important;
+  }
+
+  .testi-box {
+    margin: 8px 0 !important;
+  }
+
+  /* --- Enquiry form section --- */
+  #enquiry {
+    padding: 24px 16px !important;
+  }
+
+  /* Form table inputs */
+  #enquiry input,
+  #enquiry select,
+  #enquiry textarea {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+
+  .enquiry-container {
+    width: 100% !important;
+  }
+
+
+  .contact-info {
+    padding-left: 0 !important;
+    padding-top: 20px !important;
+    border-top: 1px solid #ccc;
+  }
+
+  /* --- CTA Banner --- */
+  #enquiry~div button,
+  body>div[style*="orange"] button {
+    display: block;
+    width: 90%;
+    margin: 8px auto !important;
+  }
+
+  /* --- Footer --- */
+  body>div[style*="#111111"] {
+    padding: 20px 16px !important;
+  }
+
+  body>div[style*="#111111"] .grid-col {
+    padding-bottom: 16px !important;
+  }
+
+  body>div[style*="#111111"] img {
+    height: 40px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section h1 {
+    font-size: 22px !important;
+  }
+
+  .grid-layout.grid-6-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #stats h1 {
+    font-size: 28px !important;
+  }
+}
+
+.recruiters-section {
+  padding: 80px 0 60px;
+  background: var(--dark-2);
+}
+
+.recruiter-marquee {
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 40px;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.recruiter-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  padding: 12px 28px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  transition: var(--transition);
+  flex-shrink: 0;
+}
+
+.recruiter-logo:hover {
+  border-color: var(--primary);
+  color: var(--text-primary);
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
